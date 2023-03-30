@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var progressbar: UIProgressView!
     
+    @IBOutlet weak var slidernumber: UILabel!
+    @IBOutlet weak var slider: UISlider!
     var time = Timer()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +35,8 @@ class ViewController: UIViewController {
                   })
     }
     
+    @IBAction func sliderAction(_ sender: UISlider) {
+        slidernumber.text = String(Int(slider.value))
+    }
 }
 

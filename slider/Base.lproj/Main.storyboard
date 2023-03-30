@@ -35,20 +35,46 @@
                                     <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WKA-IW-ogW"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="NI9-Hv-fv9">
+                                <rect key="frame" x="18" y="306" width="378" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XKH-6n-soX"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ryw-7B-Xxh"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-a5-4Ig">
+                                <rect key="frame" x="161" y="385" width="92" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="AiH-Pl-HSe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CLw-AE-E8m" secondAttribute="trailing" constant="20" id="5fQ-bw-xda"/>
                             <constraint firstItem="b0A-8E-uTB" firstAttribute="top" secondItem="CLw-AE-E8m" secondAttribute="bottom" constant="53" id="8pg-op-hu7"/>
+                            <constraint firstItem="NI9-Hv-fv9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EYW-Qj-nSk"/>
                             <constraint firstItem="b0A-8E-uTB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="LDT-Zy-HEC"/>
                             <constraint firstItem="CLw-AE-E8m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="UIW-qW-CKu"/>
+                            <constraint firstItem="NI9-Hv-fv9" firstAttribute="top" secondItem="b0A-8E-uTB" secondAttribute="bottom" constant="56" id="XZJ-nY-lfv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NI9-Hv-fv9" secondAttribute="trailing" constant="20" id="bCk-9o-erk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b0A-8E-uTB" secondAttribute="trailing" constant="166" id="nDu-1L-Zxl"/>
+                            <constraint firstItem="hdg-a5-4Ig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="ozd-P0-V01"/>
+                            <constraint firstItem="hdg-a5-4Ig" firstAttribute="top" secondItem="NI9-Hv-fv9" secondAttribute="bottom" constant="49" id="skx-x4-vxv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hdg-a5-4Ig" secondAttribute="trailing" constant="161" id="yZH-4I-1Yi"/>
                             <constraint firstItem="CLw-AE-E8m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="z9Q-33-zbX"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="progressbar" destination="CLw-AE-E8m" id="gMz-a1-XDV"/>
+                        <outlet property="slider" destination="NI9-Hv-fv9" id="hGv-4x-aCd"/>
+                        <outlet property="slidernumber" destination="hdg-a5-4Ig" id="1Gk-vd-veq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
